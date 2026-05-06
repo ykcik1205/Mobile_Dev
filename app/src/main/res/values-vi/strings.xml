@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">K234112EApp</string>
+    <string name="str_welcome">Xin chào K234112E</string>
+    <string name="str_say_hello">Chào K234112E</string>
+    <string name="atr_clickme_say_hello">Bấm để Nói Xin Chào</string>
+    <string name="str_login_system">Đăng nhập vào hệ thống</string>
+    <string name="str_user_name">Tên người dùng</string>
+    <string name="str_hint_username">Nhập tên người dùng</string>
+    <string name="str_password">Mật khẩu</string>
+    <string name="str_hint_password">Nhập mật khẩu</string>
+    <string name="str_login">Đăng nhập</string>
+    <string name="str_exit">Thoát</string>
+    <string name="str_login_success" translatable="false">Đăng nhập thành công!!!</string>
+    <string name="str_login_failed" translatable="false">Đăng nhập thất bại!!!</string>
+    <string name="str_mc" translatable="false">MC</string>
+    <string name="str_mr" translatable="false">MR</string>
+    <string name="str_mplus" translatable="false">M+</string>
+    <string name="str_mminus" translatable="false">M-</string>
+    <string name="str_ms" translatable="false">Ms</string>
+    <string name="str_m" translatable="false">M</string>
+    <string name="str_open_calculator">Mở ứng dụng máy tính</string>
+    <string name="str_error">Lỗi cú pháp</string>
+    <string name="str_memory_deleted">Đã xoá bộ nhớ</string>
+    <string name="str_memory_saved">Đã lưu vào bộ nhớ</string>
+    <string name="str_memory_added">Đã cộng vào bộ nhớ</string>
+    <string name="str_memory_subtracted">Đã trừ khỏi bộ nhớ</string>
+    <string name="str_memory_saving">Bộ nhớ đang lưu: %1$s</string>
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">K234112EApp</string>
+    <string name="str_welcome">Welcome to K234112E</string>
+    <string name="str_say_hello">Hello K234112E</string>
+    <string name="atr_clickme_say_hello">Say Hello</string>
+    <string name="str_login_system" translatable="false">Login System</string>
+    <string name="str_user_name" translatable="false">Username</string>
+    <string name="str_hint_username" translatable="false">Enter your username</string>
+    <string name="str_password" translatable="false">Password</string>
+    <string name="str_hint_password" translatable="false">Enter your password</string>
+    <string name="str_login" translatable="false">Login</string>
+    <string name="str_exit" translatable="false">Exit</string>
+    <string name="str_login_success" translatable="false">Login successfully!!!</string>
+    <string name="str_login_failed" translatable="false">Login failed!!!</string>
+    <string name="str_mc" translatable="false">MC</string>
+    <string name="str_mr" translatable="false">MR</string>
+    <string name="str_mplus" translatable="false">M+</string>
+    <string name="str_mminus" translatable="false">M-</string>
+    <string name="str_ms" translatable="false">Ms</string>
+    <string name="str_m" translatable="false">M</string>
+    <string name="str_open_calculator" translatable="false">Open Calculator App</string>
+    <string name="str_error">Error</string>
+    <string name="str_memory_deleted">Memory deleted</string>
+    <string name="str_memory_saved">Memory saved</string>
+    <string name="str_memory_added">Memory added</string>
+    <string name="str_memory_subtracted">Memory subtracted</string>
+    <!-- Câu này có chứa biến (số bộ nhớ) nên mình dùng %1$s để chèn chữ vào sau -->
+    <string name="str_memory_saving">Memory saving: %1$s</string>
+</resources>
