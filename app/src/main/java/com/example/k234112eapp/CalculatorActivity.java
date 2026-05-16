@@ -1,5 +1,6 @@
 package com.example.k234112eapp;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +26,7 @@ public class CalculatorActivity extends AppCompatActivity {
     View.OnClickListener advanced_onclick;
     // THÊM DÒNG NÀY NÈ: Tạo "cái túi" bộ nhớ, mặc định ban đầu bằng 0
     double memoryValue = 0;
+    String calc_share_pref="CalculatorPref";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -254,5 +256,34 @@ public class CalculatorActivity extends AppCompatActivity {
         String new_value=old_value+input_value;
         //show new value for customer;
         edtFormula.setText(new_value);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        SharedPreferences preferences=getSharedPreferences(calc_share_pref,MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        // 2. Lấy chuỗi phép tính đang hiển thị trên màn hình
+        String currentFormula = edtFormula.getText().toString();
+        // 3. Ghi vào sổ tay với cái nhãn dán là "saved_formula"
+        editor.putString("saved_formula", currentFormula);
+        // Lỡ người ta lưu số MS rồi tắt app thì mở lên vẫn còn nguyên!
+        editor.putString("saved_memory", String.valueOf(memoryValue));
+        editor.apply();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences preferences=getSharedPreferences(calc_share_pref,MODE_PRIVATE);
+        String savedFormula = preferences.getString("saved_formula", "");
+        // Hiển thị lại lên màn hình
+        edtFormula.setText(savedFormula);
+        String savedMemoryStr = preferences.getString("saved_memory", "0");
+        try {
+            memoryValue = Double.parseDouble(savedMemoryStr);
+        } catch (Exception e) {
+            memoryValue = 0;
+        }
     }
 }

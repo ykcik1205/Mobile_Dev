@@ -11,11 +11,12 @@
     tools:context=".LoginActivity">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgBack"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        app:srcCompat="@mipmap/ic_myself" />
+        android:visibility="visible"
+        app:srcCompat="@mipmap/cal_background" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -72,6 +73,44 @@
             android:hint="@string/str_hint_password"
             android:inputType="text"
             android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/str_login_role"
+            android:textSize="17sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="@string/str_role_admin"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radEmp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="@string/str_role_employee"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/chkSaveLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/str_save_login_info"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"

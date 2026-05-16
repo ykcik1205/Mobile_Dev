@@ -26,4 +26,18 @@
     <string name="str_memory_added">Đã cộng vào bộ nhớ</string>
     <string name="str_memory_subtracted">Đã trừ khỏi bộ nhớ</string>
     <string name="str_memory_saving">Bộ nhớ đang lưu: %1$s</string>
+    <string name="str_save_login_info">Lưu thông tin đăng nhập</string>
+    <string name="str_login_role">Vai trò đăng nhập</string>
+    <string name="str_role_admin">Quản trị viên</string>
+    <string name="str_role_employee">Nhân viên</string>
+    <string name="str_select_role" translatable="false">Vui lòng chọn quyền đăng nhập</string>
+    <string name="str_confirm_exit_title" translatable="false">Xác nhận thoát</string>
+    <string name="str_confirm_exit" translatable="false">Bạn muốn thoát phải không?</string>
+    <string name="str_yes" translatable="false">Có</string>
+    <string name="str_no" translatable="false">Không</string>
+    <string name="str_employee_id">ID Nhân viên:</string>
+    <string name="str_employee_name">Tên nhân viên:</string>
+    <string name="str_phone_number">Số điện thoại:</string>
+    <string name="str_save">Lưu</string>
+    <string name="str_delete">Xoá</string>
 </resources>
