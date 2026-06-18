@@ -44,4 +44,6 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation("net.objecthunter:exp4j:0.4.8")
+    implementation(libs.gson)
+    implementation(libs.glide)
 }

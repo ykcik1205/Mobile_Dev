@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/order_status_all"
+        android:title="@string/str_order_status_all" />
+    <item
+        android:id="@+id/order_status_completed"
+        android:title="@string/str_order_status_completed" />
+    <item
+        android:id="@+id/order_status_unpay"
+        android:title="@string/str_order_status_unpay" />
+    <item
+        android:id="@+id/order_status_log"
+        android:title="@string/str_order_status_log" />
+    <item
+        android:id="@+id/order_status_complain"
+        android:title="@string/str_order_status_complain" />
+</menu>

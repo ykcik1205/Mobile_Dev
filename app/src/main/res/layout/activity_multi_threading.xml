@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MultiThreadingActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_number_button"
+        android:textColor="@color/text_secondary"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.1" />
+
+    <EditText
+        android:id="@+id/edtNumberButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:elevation="2dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="5000"
+        android:textColor="@color/text_primary" />
+
+    <Button
+        android:id="@+id/btnCreateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/primary_blue"
+        android:onClick="processMultiThreading"
+        android:padding="12dp"
+        android:text="@string/str_create_button"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0%"
+        android:textAlignment="center"
+        android:textColor="@color/primary_dark"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBarPercent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:progressTint="@color/accent_color" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0D000000"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</LinearLayout>

@@ -47,6 +47,111 @@
     <string name="str_select_to_delete" translatable="false">Please select an employee to delete!</string>
     <string name="str_delete_success" translatable="false">Deleted successfully!</string>
     <string name="str_confirm_delete_title" translatable="false">Confirm Delete</string>
+    <string name="str_department" translatable="false">Department:</string>
+    <string name="str_list_employee" translatable="false">List Employee:</string>
+    <string name="str_birthplace" translatable="false">Birth Place:</string>
+    <string name="str_require_department" translatable="false">Please select a department!</string>
+    <string name="str_order_report" translatable="false">Order Report</string>
+    <string name="str_from_date" translatable="false">From Date:</string>
+    <string name="str_to_date" translatable="false">To Date:</string>
+    <string name="str_open_order_mng" translatable="false">Open Order Management</string>
+    <string name="str_order_status_all" translatable="false">All Status</string>
+    <string name="str_order_status_completed" translatable="false">Completed</string>
+    <string name="str_order_status_unpay" translatable="false">Not Payment</string>
+    <string name="str_order_status_log" translatable="false">On Logistic</string>
+    <string name="str_order_status_complain" translatable="false">Customer Complain</string>
+    <string name="str_open_category">Open Category Screen</string>
+    <string name="str_open_product_view">Open Product Page</string>
+    <string name="str_system_management">System Management</string>
+    <string name="str_utilities_and_tools"><![CDATA[Utilities & Tools]]></string>
+    <string name="str_exit_app">Exit App</string>
+    <string name="str_category">New Category</string>
+    <string name="str_category_statistic">Statistic</string>
+    <string name="str_category_id">Category ID:</string>
+    <string name="str_category_name">Category Name:</string>
+    <string name="str_category_description">Category Description</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_time">Time</string>
+    <string name="str_message_body">Message Body:</string>
+    <string name="str_open_sms_sypeware">Open SMS Sypeware</string>
+    <string name="str_number_button">Number Button</string>
+    <string name="str_create_button">Create</string>
+    <string name="str_open_multi_threading_demo">Open Multi Threading Demo</string>
+    <string name="str_number_of_products">Number of Product</string>
+    <string name="str_download_product">Download Product</string>
+    <string name="str_download_done">Download Done</string>
+    <string name="str_open_multi_threading_object">Open Multi Threading Object</string>
+    <string name="str_open_paper_screen">Open Paper Screen</string>
+    <string name="str_play_audio_1">Play Audio 1</string>
+    <string name="str_play_audio_2">Play Audio 2</string>
+    <string name="str_uel">University of Economics and Law</string>
+    <string name="str_open_font_and_music">Open Font and Music</string>
+    <string name="str_open_my_uel">Open My UEL</string>
+    <string-array name="array_birthplace">
+        <item>An Giang</item>
+        <item>Bà Rịa - Vũng Tàu</item>
+        <item>Bắc Giang</item>
+        <item>Bắc Kạn</item>
+        <item>Bạc Liêu</item>
+        <item>Bắc Ninh</item>
+        <item>Bến Tre</item>
+        <item>Bình Định</item>
+        <item>Bình Dương</item>
+        <item>Bình Phước</item>
+        <item>Bình Thuận</item>
+        <item>Cà Mau</item>
+        <item>Cần Thơ</item>
+        <item>Cao Bằng</item>
+        <item>Đà Nẵng</item>
+        <item>Đắk Lắk</item>
+        <item>Đắk Nông</item>
+        <item>Điện Biên</item>
+        <item>Đồng Nai</item>
+        <item>Đồng Tháp</item>
+        <item>Gia Lai</item>
+        <item>Hà Giang</item>
+        <item>Hà Nam</item>
+        <item>Hà Nội</item>
+        <item>Hà Tĩnh</item>
+        <item>Hải Dương</item>
+        <item>Hải Phòng</item>
+        <item>Hậu Giang</item>
+        <item>Hòa Bình</item>
+        <item>Huế</item>
+        <item>Hưng Yên</item>
+        <item>Khánh Hòa</item>
+        <item>Kiên Giang</item>
+        <item>Kon Tum</item>
+        <item>Lai Châu</item>
+        <item>Lâm Đồng</item>
+        <item>Lạng Sơn</item>
+        <item>Lào Cai</item>
+        <item>Long An</item>
+        <item>Nam Định</item>
+        <item>Nghệ An</item>
+        <item>Ninh Bình</item>
+        <item>Ninh Thuận</item>
+        <item>Phú Thọ</item>
+        <item>Phú Yên</item>
+        <item>Quảng Bình</item>
+        <item>Quảng Nam</item>
+        <item>Quảng Ngãi</item>
+        <item>Quảng Ninh</item>
+        <item>Quảng Trị</item>
+        <item>Sóc Trăng</item>
+        <item>Sơn La</item>
+        <item>Tây Ninh</item>
+        <item>Thái Bình</item>
+        <item>Thái Nguyên</item>
+        <item>Thanh Hóa</item>
+        <item>Tiền Giang</item>
+        <item>TP. Hồ Chí Minh</item>
+        <item>Trà Vinh</item>
+        <item>Tuyên Quang</item>
+        <item>Vĩnh Long</item>
+        <item>Vĩnh Phúc</item>
+        <item>Yên Bái</item>
+    </string-array>
 
 
 </resources>

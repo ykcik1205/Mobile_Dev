@@ -1,11 +1,26 @@
 package com.example.models;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee implements Serializable {
     private String id;
     private String name;
     private String phone;
+    private String birthPlace;
+
+    public String getBirthplace() {
+        return birthPlace;
+    }
+
+    public void setBirthplace(String birthplace) {
+        this.birthPlace = birthplace;
+    }
 
     public Employee() {
+    }
+    public Employee(String id, String name, String phone, String birthplace) {
+        this(id,name,phone);
+        this.birthPlace = birthplace;
     }
 
     public Employee(String id, String name, String phone) {

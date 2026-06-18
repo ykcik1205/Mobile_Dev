@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".PaperActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIN RAO VẶT MỚI NHẤT"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#C62828"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <ListView
+        android:id="@+id/lvPaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#EEEEEE"
+        android:dividerHeight="1dp" />
+</LinearLayout>

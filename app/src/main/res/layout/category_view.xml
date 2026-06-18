@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:strokeColor="#E0E0E0"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtcateId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="ID: 01"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginHorizontal="12dp"
+                android:background="#BDBDBD" />
+
+            <TextView
+                android:id="@+id/txtcateName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="Category Name"
+                android:textColor="@color/purple"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="12dp"
+            android:background="#EEEEEE" />
+
+        <TextView
+            android:id="@+id/txtcateDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="This is where the category description will be displayed with an italic style."
+            android:textColor="@color/red"
+            android:textStyle="italic"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:alpha="0.85" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

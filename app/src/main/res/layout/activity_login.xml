@@ -5,147 +5,166 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:background="#F3EAF6"
-    android:orientation="vertical"
     tools:context=".LoginActivity">
 
+    <!-- Ảnh nền -->
     <ImageView
         android:id="@+id/imgBack"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:visibility="visible"
         app:srcCompat="@mipmap/cal_background" />
 
-    <LinearLayout
+    <!-- Lớp phủ mờ để Card nổi bật -->
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|center_vertical"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:background="#66000000" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="monospace"
-            android:text="@string/str_login_system"
-            android:textAlignment="center"
-            android:textColor="#E91E63"
-            android:textSize="34sp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/yellow"
-            android:fontFamily="monospace"
-            android:text="@string/str_user_name"
-            android:textColor="#4821F3"
-            android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/edtUserName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:fontFamily="monospace"
-            android:hint="@string/str_hint_username"
-            android:inputType="text"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/yellow"
-            android:fontFamily="monospace"
-            android:text="@string/str_password"
-            android:textColor="#4821F3"
-            android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/edtPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:fontFamily="monospace"
-            android:hint="@string/str_hint_password"
-            android:inputType="text"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="monospace"
-            android:text="@string/str_login_role"
-            android:textSize="17sp" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/radAdmin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="monospace"
-                android:text="@string/str_role_admin"
-                android:textSize="16sp" />
-
-            <RadioButton
-                android:id="@+id/radEmp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="monospace"
-                android:text="@string/str_role_employee"
-                android:textSize="16sp" />
-        </RadioGroup>
-
-        <CheckBox
-            android:id="@+id/chkSaveLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="monospace"
-            android:text="@string/str_save_login_info"
-            android:textSize="18sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:gravity="center"
+            android:padding="16dp">
 
-            <Button
-                android:id="@+id/btnLogin"
-                android:layout_width="wrap_content"
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:onClick="loginsystem"
-                android:text="@string/str_login"
-                android:textSize="20sp" />
+                app:cardCornerRadius="24dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="#E0E0E0"
+                app:strokeWidth="1dp">
 
-            <Button
-                android:id="@+id/btnExit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:onClick="exitsystem"
-                android:text="@string/str_exit"
-                android:textSize="20sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <!-- Tiêu đề -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dp"
+                        android:text="@string/str_login_system"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <!-- Ô nhập Username -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:hint="@string/str_user_name"
+                        app:startIconDrawable="@android:drawable/ic_menu_myplaces">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Ô nhập Password -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:hint="@string/str_password"
+                        app:passwordToggleEnabled="true"
+                        app:startIconDrawable="@android:drawable/ic_lock_idle_lock">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Chọn quyền truy cập -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/str_login_role"
+                        android:textColor="#555555"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radAdmin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/str_role_admin" />
+
+                        <RadioButton
+                            android:id="@+id/radEmp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/str_role_employee" />
+                    </RadioGroup>
+
+                    <!-- Ghi nhớ đăng nhập -->
+                    <CheckBox
+                        android:id="@+id/chkSaveLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dp"
+                        android:text="@string/str_save_login_info" />
+
+                    <!-- Nút bấm -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="12dp"
+                        android:onClick="loginsystem"
+                        android:text="@string/str_login"
+                        android:textSize="18sp"
+                        app:cornerRadius="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnExit"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:onClick="exitsystem"
+                        android:text="@string/str_exit"
+                        android:textColor="@color/red"
+                        app:cornerRadius="16dp"
+                        app:strokeColor="@color/red" />
+
+                    <!-- Thông báo lỗi -->
+                    <TextView
+                        android:id="@+id/txtMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/red"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/txtMessage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/yellow"
-            android:fontFamily="monospace"
-            android:textColor="#4821F3"
-            android:textSize="16sp" />
-    </LinearLayout>
-
+    </ScrollView>
 </FrameLayout>

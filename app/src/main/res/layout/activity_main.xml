@@ -5,67 +5,245 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:foregroundTint="#833232"
+    android:background="#F5F5F5"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:padding="20dp">
 
+            <!-- Header Section -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="@color/purple"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="32dp">
+
+                    <TextView
+                        android:id="@+id/txtWelcome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_welcome"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:text="Welcome User" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="K234112E System Dashboard"
+                        android:textColor="#E1BEE7"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Main Management Section -->
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hello World!" />
+                android:layout_marginBottom="12dp"
+                android:letterSpacing="0.1"
+                android:text="@string/str_system_management"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="12dp"
+                android:onClick="openCategoryScreen"
+                android:text="@string/str_open_category"
+                android:gravity="start|center_vertical"
+                android:paddingStart="20dp"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_sort_by_size"
+                app:iconPadding="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button19"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center_vertical"
+                android:onClick="openMYUEL"
+                android:paddingStart="20dp"
+                android:text="@string/str_open_my_uel"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_gallery"
+                app:iconPadding="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="12dp"
+                android:onClick="openProductView"
+                android:text="@string/str_open_product_view"
+                android:gravity="start|center_vertical"
+                android:paddingStart="20dp"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_gallery"
+                app:iconPadding="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="12dp"
+                android:onClick="openOrderManagement"
+                android:text="@string/str_open_order_mng"
+                android:gravity="start|center_vertical"
+                android:paddingStart="20dp"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_agenda"
+                app:iconPadding="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center_vertical"
+                android:onClick="openSMSSypeware"
+                android:paddingStart="20dp"
+                android:text="@string/str_open_sms_sypeware"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_agenda"
+                app:iconPadding="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center_vertical"
+                android:onClick="openMultiThreadingActivity"
+                android:paddingStart="20dp"
+                android:text="@string/str_open_multi_threading_demo"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_agenda"
+                app:iconPadding="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center_vertical"
+                android:onClick="openMultiThreadingObjectActivity"
+                android:paddingStart="20dp"
+                android:text="@string/str_open_multi_threading_object"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_agenda"
+                app:iconPadding="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center_vertical"
+                android:onClick="openPaperScreen"
+                android:paddingStart="20dp"
+                android:text="@string/str_open_paper_screen"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_agenda"
+                app:iconPadding="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center_vertical"
+                android:onClick="openFontandMusic"
+                android:paddingStart="20dp"
+                android:text="@string/str_open_font_and_music"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_gallery"
+                app:iconPadding="16dp" />
+
+            <!-- Utils Section -->
             <TextView
-                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="K234112E"
-                android:textColor="#731C1C"
-                android:textColorHighlight="#34B16E" />
+                android:layout_marginBottom="12dp"
+                android:letterSpacing="0.1"
+                android:text="@string/str_utilities_and_tools"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="say_hello"
-                android:text="ClickMe" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="close_app"
-                android:text="Close"
-                android:textColor="#F6BD08" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/str_welcome"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="click_say_hello"
-                android:text="@string/atr_clickme_say_hello" />
-
-            <Button
-                android:onClick="openCalculatorApp"
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/button3"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="12dp"
+                android:onClick="openCalculatorApp"
+                android:text="@string/str_open_calculator"
+                app:cornerRadius="12dp"
+                app:icon="@android:drawable/ic_menu_day" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/str_open_calculator" />
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="say_hello"
+                    android:text="Greet" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button2"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="click_say_hello"
+                    android:text="@string/atr_clickme_say_hello" />
+            </LinearLayout>
+
+            <!-- Bottom Action -->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:onClick="close_app"
+                android:text="@string/str_exit_app"
+                android:textColor="@color/red"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="12dp"
+                app:strokeColor="@color/red"
+                app:strokeWidth="1dp" />
+
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

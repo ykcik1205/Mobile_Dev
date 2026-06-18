@@ -6,10 +6,132 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/gray_light"
+    android:padding="8dp"
     tools:context=".EmployeeAdvancedActivity">
 
-    <ListView
-        android:id="@+id/lvEmployee"
+    <!-- Card chọn phòng ban -->
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/str_department"
+                android:textColor="@color/primary_blue"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:letterSpacing="0.05" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/divider" />
+
+            <Spinner
+                android:id="@+id/spDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Card danh sách nhân viên -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/str_list_employee"
+                android:textColor="@color/primary_blue"
+                android:textSize="16sp"
+                android:textAllCaps="true" />
+
+            <!-- Thanh công cụ (Thêm, Sửa, Xóa) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/primary_light"
+                android:paddingVertical="4dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgAddEmployee"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@mipmap/ic_add_emp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:background="@color/primary_blue" />
+
+                <ImageView
+                    android:id="@+id/imgEditEmployee"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@mipmap/ic_edit_emp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:background="@color/primary_blue" />
+
+                <ImageView
+                    android:id="@+id/imgDeleteEmployee"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@mipmap/ic_del_emp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvEmployee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/divider"
+                android:dividerHeight="0.5dp"
+                android:paddingHorizontal="4dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

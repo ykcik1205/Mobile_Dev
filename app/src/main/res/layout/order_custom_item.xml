@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:baselineAligned="false">
+
+    <!-- Khối 1: ID -->
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="2dp"
+        android:background="#E3F2FD"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="ID"
+        android:textColor="#1565C0"
+        android:textStyle="bold" />
+
+    <!-- Khối 2: Ngày và Trạng thái -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:layout_margin="2dp"
+        android:background="#FAFAFA"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="01/01/2024"
+            android:textColor="#757575"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="STATUS"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Khối 3: Giá tiền -->
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="2dp"
+        android:background="#E8F5E9"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="0 VNĐ"
+        android:textColor="#2E7D32"
+        android:textStyle="bold" />
+
+</LinearLayout>

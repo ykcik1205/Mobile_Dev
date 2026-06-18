@@ -69,7 +69,7 @@ public class CalculatorActivity extends AppCompatActivity {
                     //step1: get data (formula)
                     String formula=edtFormula.getText().toString();
                     // Step 2: Xử lý thay thế dấu
-                    String fixedFormula = formula.replace("x", "*").replace(":", "/");
+                    String fixedFormula = formula.replace("x", "*").replace("×", "*").replace(":", "/").replace("÷", "/").replace("−", "-");
                     //step3: invoke library for formula (find internet...)
                     Expression expression = new ExpressionBuilder(fixedFormula).build();
                     double result = expression.evaluate();
@@ -120,7 +120,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 double currentValue = 0;
                 try {
                     // Bắt buộc phải tính ra một con số cụ thể trước
-                    String fixedFormula = currentText.replace("x", "*").replace(":", "/");
+                    String fixedFormula = currentText.replace("x", "*").replace("×", "*").replace(":", "/").replace("÷", "/").replace("−", "-");
                     Expression expression = new ExpressionBuilder(fixedFormula).build();
                     currentValue = expression.evaluate();
                 } catch (Exception e) {
@@ -175,7 +175,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 double currentValue = 0;
                 try {
                     // Giải quyết phép tính trên màn hình trước để ra 1 con số cụ thể
-                    String fixedFormula = currentText.replace("x", "*").replace(":", "/");
+                    String fixedFormula = currentText.replace("x", "*").replace("×", "*").replace(":", "/").replace("÷", "/").replace("−", "-");
                     Expression expression = new ExpressionBuilder(fixedFormula).build();
                     currentValue = expression.evaluate();
                 } catch (Exception e) {

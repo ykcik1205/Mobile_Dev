@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#004c6d"
+    tools:context=".MyUELActivity">
+
+    <!-- Header: Nhập liệu Manual/Voice -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/edtInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nhập text hoặc dùng giọng nói..."
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:autofillHints="" />
+
+        <ImageButton
+            android:id="@+id/btnVoice"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Voice Recognition" />
+    </LinearLayout>
+
+    <!-- Thanh hiển thị ngành đã chọn (Màu Cam + Nút Tím) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#e67e22"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/txtSelectedMajor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Thương mại điện tử"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <TextView
+            android:id="@+id/btnDropdown"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#8e44ad"
+            android:text="V"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Nút Get Data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnGetData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Data"
+            android:backgroundTint="#e67e22"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <!-- Vùng hiển thị dữ liệu từ MYUEL -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:background="#e67e22">
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Data from MYUEL"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <android.webkit.WebView
+            android:id="@+id/wvContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- Footer Xanh -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#004c6d" />
+
+</LinearLayout>
