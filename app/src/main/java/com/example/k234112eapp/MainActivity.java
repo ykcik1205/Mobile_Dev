@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         addViews();
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.LinearLayout), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -97,6 +97,16 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openMYUEL(View view) {
         Intent intent=new Intent(MainActivity.this,MyUELActivity.class);
+        startActivity(intent);
+    }
+
+    public void openFirebaseContact(View view) {
+        Intent intent=new Intent(MainActivity.this,FirebaseActivity.class);
+        startActivity(intent);
+    }
+
+    public void openECommerceFirebase(View view) {
+        Intent intent=new Intent(MainActivity.this,ECFirebaseActivity.class);
         startActivity(intent);
     }
 }

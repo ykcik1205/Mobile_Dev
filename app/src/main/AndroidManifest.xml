@@ -14,6 +14,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -26,7 +27,35 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.K234112EApp">
+        android:theme="@style/Theme.K234112EApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ECProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ECOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ECEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ECCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ECCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ECFirebaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InsertContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirebaseActivity"
+            android:exported="false" />
         <activity
             android:name=".MyUELActivity"
             android:exported="false" />

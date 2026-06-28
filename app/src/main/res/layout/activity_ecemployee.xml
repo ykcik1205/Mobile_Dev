@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@color/gray_light"
     android:padding="8dp"
-    tools:context=".EmployeeAdvancedActivity">
+    tools:context=".ECEmployeeActivity">
 
     <!-- Card chọn phòng ban -->
     <com.google.android.material.card.MaterialCardView

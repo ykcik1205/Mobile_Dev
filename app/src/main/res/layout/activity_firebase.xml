@@ -6,13 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CategoryActivity">
+    tools:context=".FirebaseActivity">
+
+    <Button
+        android:id="@+id/btnInsertContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_insert_contact" />
 
     <ListView
-        android:id="@+id/lvCategory"
-        android:textColor="#000000"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textSize="18sp"
+        android:id="@+id/lvContact"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

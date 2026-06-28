@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_end"
+    android:fillViewport="true"
+    tools:context=".ECFirebaseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/str_open_ecommerce_firebase"
+            android:textColor="@color/purple"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <!-- Category Management Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCategory"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/str_category_mng"
+            android:textAllCaps="false"
+            android:textColor="@color/purple"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            app:elevation="4dp"
+            app:icon="@android:drawable/ic_menu_agenda"
+            app:iconPadding="12dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/purple"
+            app:strokeColor="@color/purple"
+            app:strokeWidth="1.5dp" />
+
+        <!-- Customer Management Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCustomer"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/str_customer_mng"
+            android:textAllCaps="false"
+            android:textColor="@color/accent_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            app:elevation="4dp"
+            app:icon="@android:drawable/ic_menu_myplaces"
+            app:iconPadding="12dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/accent_color"
+            app:strokeColor="@color/accent_color"
+            app:strokeWidth="1.5dp" />
+
+        <!-- Employee Management Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEmployee"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/str_employee_mng"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            app:elevation="4dp"
+            app:icon="@android:drawable/ic_menu_edit"
+            app:iconPadding="12dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/primary_dark"
+            app:strokeColor="@color/primary_dark"
+            app:strokeWidth="1.5dp" />
+
+        <!-- Order Management Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOrder"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/str_order_mng"
+            android:textAllCaps="false"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            app:elevation="4dp"
+            app:icon="@android:drawable/ic_menu_sort_by_size"
+            app:iconPadding="12dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/red"
+            app:strokeColor="@color/red"
+            app:strokeWidth="1.5dp" />
+
+        <!-- Product Management Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnProduct"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/str_product_mng"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            app:elevation="4dp"
+            app:icon="@android:drawable/ic_menu_gallery"
+            app:iconPadding="12dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/blue"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="1.5dp" />
+
+    </LinearLayout>
+</ScrollView>

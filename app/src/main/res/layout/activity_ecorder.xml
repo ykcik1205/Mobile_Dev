@@ -5,7 +5,7 @@
     android:id="@+id/LinearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OrderManagementActivity">
+    tools:context=".ECOrderActivity">
 
     <ImageView
         android:id="@+id/imageView4"

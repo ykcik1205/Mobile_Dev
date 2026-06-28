@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/LinearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5"
@@ -90,6 +90,32 @@
                 android:onClick="openMYUEL"
                 android:paddingStart="20dp"
                 android:text="@string/str_open_my_uel"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_gallery"
+                app:iconPadding="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button20"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center_vertical"
+                android:onClick="openFirebaseContact"
+                android:paddingStart="20dp"
+                android:text="@string/str_open_firebase_contact"
+                app:cornerRadius="16dp"
+                app:icon="@android:drawable/ic_menu_gallery"
+                app:iconPadding="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button25"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center_vertical"
+                android:onClick="openECommerceFirebase"
+                android:paddingStart="20dp"
+                android:text="@string/str_open_ecommerce_firebase"
                 app:cornerRadius="16dp"
                 app:icon="@android:drawable/ic_menu_gallery"
                 app:iconPadding="16dp" />

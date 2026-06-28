@@ -87,6 +87,25 @@
     <string name="str_uel">University of Economics and Law</string>
     <string name="str_open_font_and_music">Open Font and Music</string>
     <string name="str_open_my_uel">Open My UEL</string>
+    <string name="str_insert_contact">Insert Contact</string>
+    <string name="str_contact_id_label">Contact Id:</string>
+    <string name="str_contact_id_hint">Contact Id here</string>
+    <string name="str_name_label">Name:</string>
+    <string name="str_name_hint">Name here</string>
+    <string name="str_email_label">Email:</string>
+    <string name="str_email_hint">Email here</string>
+    <string name="str_phone_label">Phone:</string>
+    <string name="str_phone_hint">Phone here</string>
+    <string name="str_open_firebase_contact">Open Firebase Contact</string>
+    <string name="str_detail_contact">Detail Contact</string>
+    <string name="str_update">Update</string>
+    <string name="str_back">Back</string>
+    <string name="str_open_ecommerce_firebase">E-Commerce Management</string>
+    <string name="str_category_mng">Category Management</string>
+    <string name="str_customer_mng">Customer Management</string>
+    <string name="str_employee_mng">Employee Management</string>
+    <string name="str_order_mng">Order Management</string>
+    <string name="str_product_mng">Product Management</string>
     <string-array name="array_birthplace">
         <item>An Giang</item>
         <item>Bà Rịa - Vũng Tàu</item>

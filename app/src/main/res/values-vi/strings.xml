@@ -78,4 +78,7 @@
     <string name="str_uel">University of Economics and Law</string>
     <string name="str_open_font_and_music">Open Font and Music</string>
     <string name="str_open_my_uel">Open My UEL</string>
+    <string name="str_insert_contact">Insert Contact</string>
+    <string name="str_open_firebase_contact">Open Firebase Contact</string>
+    <string name="str_open_ecommerce_firebase">Open E-Commerce Firebase</string>
 </resources>

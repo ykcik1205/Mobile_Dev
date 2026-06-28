@@ -2,11 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CategoryActivity">
+    tools:context=".ECCategoryActivity">
 
     <ListView
         android:id="@+id/lvCategory"
@@ -15,4 +15,5 @@
         android:textSize="18sp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 </LinearLayout>
